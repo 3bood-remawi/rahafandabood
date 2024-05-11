@@ -1,0 +1,27 @@
+
+#border-card{
+    border-color: #ff1b6d;
+    background-color: white;
+}
+#form-label{
+    margin-left: auto;
+}
+#form-control{
+    border-color: #ff1b6d;
+}
+#form-select{
+    border-color: #ff1b6d;
+}
+#sign-up{
+    margin-bottom: 10px;
+font-style: italic;
+color: #ff1b6d;
+}
+#submit{
+    background-color: #ff1b6d;
+    border-color: #ff1b6d;
+}
+#submit:hover{
+    background-color: palevioletred !important;
+}
+

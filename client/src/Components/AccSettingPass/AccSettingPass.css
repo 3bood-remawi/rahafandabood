@@ -1,0 +1,157 @@
+/*.settings-options button {
+    margin: 0.5rem;  
+    width: auto;  
+}
+
+ .container h6
+ {
+    margin-top: 15px;
+     
+ }
+
+ .container {
+    
+    background-color: #ececec;
+    
+
+ }
+.account-settings
+{
+    background-color: #ececec;
+    
+}
+.custom-card
+{
+    border: 1px solid rgb(145, 24, 70);  
+    border-radius: 50px;  
+    overflow: hidden;  
+    width: 250px;
+    height: 20px; 
+    margin-top: 20px;
+    
+}
+
+.custom-button {
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+    padding: 10px;
+    width: 200px;
+    height: 50px;
+    border-radius: 0%;  
+    border: none;
+    background-color: #ffffff;
+      
+} 
+ 
+.custom-button:hover, .custom-button:focus {
+    background-color: #ca3667;
+    
+}
+ 
+.custom-card-1
+{
+    border: 1px solid rgb(255, 34, 119); 
+    overflow: hidden; 
+    width: 120%;
+    height: 100%;
+    margin-top:20px ;
+    border-radius: 50px;
+    margin-left: -150px;
+}
+
+.card-body-1{
+    border: none;
+    padding: 50px;
+    background-color: #ffffff;
+    border-radius: 30px;
+     
+    .form-control
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 40px;
+        border-radius: 5px;
+        border: 1px solid rgb(255, 34, 119);
+        margin-top: 5px;
+        margin-bottom: 30px;
+    }
+     
+}
+ 
+.btn-primary 
+{   border-radius: 10px;
+    background-color:   rgb(53, 119, 241);
+    width: 170px;
+    height: 50px;
+    border: none;
+    color: rgb(248, 247, 246);
+     
+}
+ 
+ 
+.btn.custom-button .bi {
+    margin-right: 10px;  
+    
+  }*/
+  .account-settings {
+    padding: 1rem;
+    background-color: #ececec;
+}
+
+.custom-card {
+    border: 1px solid #ca3667;
+    border-radius: 20px;
+    width: auto;  
+    height: auto;
+}
+
+.custom-card-1 {
+    border: 1px solid #ca3667;
+    border-radius: 20px;
+    background-color: #ffffff;
+    width: auto;  
+    height: auto;
+}
+
+.btn.custom-button {
+    padding: 10px;
+    border-radius: 0;
+    border: none;
+    background-color: #ffffff;
+    display: inline-block;  
+}
+
+.btn.custom-button:hover,
+.btn.custom-button:focus {
+    background-color: #ca3667;
+    color: white;
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+ 
+  @media (max-width: 768px) {
+    .custom-card,
+    .custom-card-1 {
+        width: 100%; /* Full width on smaller screens */
+        margin-left: 0; /* Reset
+        .card-body-1 {
+    padding: 1rem; /* Less padding on smaller screens */
+}
+  }
+
+.btn.custom-button {
+    width: 100%; /* Full width buttons on smaller screens */
+    margin-bottom: 0.5rem; /* Adjust spacing */
+    display: block; /* Stack buttons vertically */
+}
+
+.btn-danger {
+    width: auto;  
+}

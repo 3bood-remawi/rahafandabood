@@ -1,0 +1,146 @@
+ 
+   
+  .btn-primary.btn-instagram {
+    background-color: #c13584;
+    border-color: #c13584;
+  }
+  .btn-primary.btn-instagram:hover {
+    background-color: #ffffff;
+    color: #c13584;
+    border-color: #000000;
+  }
+  
+   
+  .btn-primary.btn-facebook {
+    background-color: #3b5998;
+    border-color: #3b5998;
+  }
+  .btn-primary.btn-facebook:hover {
+    background-color: #ffffff;
+    color: #3b5998;
+    border-color: #000000;
+  }
+  
+   
+  .btn-primary.btn-tiktok {
+    background-color: #000000;
+    border-color: #000000;
+  }
+  .btn-primary.btn-tiktok:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border-color: #000000;
+  }
+  
+   
+  .btn-primary.btn-snapchat {
+    background-color: #fffc00;
+    border-color: #fffc00;
+    color: #000000;  
+  }
+  .btn-primary.btn-snapchat:hover {
+    background-color: #ffffff;
+    color: #fffc00;
+    border-color: #000000;
+  }
+  
+   
+  .btn-primary.btn-youtube {
+    background-color: #ff0000;
+    border-color: #ff0000;
+  }
+  .btn-primary.btn-youtube:hover {
+    background-color: #ffffff;
+    color: #ff0000;
+    border-color: #000000;
+  }
+  
+   
+  .btn-primary.btn-x {
+      background-color: #000000;
+      border-color: #000000;
+    }
+    .btn-primary.btn-x:hover {
+      background-color: #ffffff;
+      color: #000000;
+      border-color: #000000;
+    }
+    .custom {
+      border: 2px solid #ca3667;  
+      border-radius: 20px;  
+      padding : 20px;
+      background-color: rgb(252, 245, 245);
+      height: 17.5cm;
+      width: 20%;
+       
+  }
+   
+  .account-settings {
+    margin:   -1rem;
+}
+
+.custom-card {
+    border-color: #ca3667;
+    border-radius: 20px;
+}
+
+.custom {
+    border: 2px solid #ca3667;
+    border-radius: 20px;
+    background-color: #ffffff;
+}
+
+.btn-custom {
+    margin: 2px;
+    white-space: nowrap;
+    transition: background-color 0.3s, border-color 0.3s;  
+}
+
+.btn-primary.btn-custom {
+    width: 100px; /* This will be overridden for smaller screens */
+}
+
+/* Social Media Button Styles */
+.btn-primary.btn-instagram {
+    background-color: #c13584;
+    border-color: #c13584;
+}
+ 
+
+ 
+.btn-primary.btn-instagram:hover {
+    background-color: #ffffff;
+    color: #c13584;
+    border-color: #000000;
+}
+ 
+
+ 
+@media (max-width: 992px) {
+    .btn-primary.btn-custom {
+        width: auto;  
+        font-size: 14px;
+    }
+
+    .custom-card.mb-3,
+    .custom {
+        margin-bottom: 1rem;
+        margin-left: 0;
+        width: auto; /* Full width on smaller screens */
+    }
+
+    .form-control, .form-select {
+        font-size: 14px;
+    }
+
+    .card-body .btn.custom-button {
+        display: block; /* Stack buttons vertically */
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .form-control, .form-select, .btn-custom {
+        font-size: 12px; /* Smaller font size on very small screens */
+    }
+}

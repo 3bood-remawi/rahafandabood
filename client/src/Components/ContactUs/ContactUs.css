@@ -1,0 +1,171 @@
+
+body {
+  background-color: white;
+}
+
+ .container {
+  background-color: white;
+ display: flex;
+  justify-content: center;
+}
+ #InfluenBlend {
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  color:  #ff1b6d;
+}
+
+
+#nav-itemmm{
+  margin-left: 20px;
+}
+#nav-link{
+  color: black;
+  font-weight: bold;
+}
+
+ul#nav-link:hover{
+color:#ff1b6d!important;
+}
+
+#logout{
+  width: 40px;
+  border-radius: 15px;
+  border-color: white;
+  margin-left: 330px;
+ margin-inline-end: auto;
+  
+}
+#icone{
+ margin-block: auto;
+}
+
+
+#navbtnn{
+  border-radius: 20px;
+ 
+}
+#navbtn{
+  border-radius: 20px;
+  border-color: #ff1b6d;
+  background-color:  #ff1b6d;
+}
+#navbtn:hover{
+  background-color: palevioletred !important;
+}
+
+
+#header{
+  display: flex;
+  /* width:100%; */
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  
+}
+
+#header-image{
+ 
+  width: 100%;
+  height: 300px;
+}
+.card-img-overlay{
+  display: flex;
+  justify-content: center;
+}
+.contact-us{
+  color: white;
+margin-top: 100px;
+
+}
+
+#boxes{
+  margin-top: 80px;
+ 
+}
+
+@media (max-width:768px) {
+    .box{
+      flex-direction: column;
+    }
+    .mb-3{
+      align-self: flex-start;
+    }
+}
+.form-label{
+  margin-left: 90px;
+  color: #ff1b6d;
+}
+
+#form-control1{
+margin-left: 90px;
+ display: wrap; 
+  max-width: 450px;
+  border-color:  #ff1b6d;
+  border-radius: 0px;
+} 
+#form-control2{
+  margin-left: 90px;
+   display: wrap; 
+    max-width: 450px;
+    border-color:  #ff1b6d;
+    border-radius: 0px;
+  }
+  #form-control3{
+    margin-left: 90px;
+     display: wrap; 
+      max-width: 450px;
+      border-color:  #ff1b6d;
+      border-radius: 0px;
+    }
+
+
+    #form-control4{
+      margin-left: 90px;
+       display: wrap; 
+        max-width: 450px;
+        border-color:  #ff1b6d;
+        border-radius: 0px;
+      }
+
+
+.mb-3{
+  margin-left: 50%;
+} 
+
+
+
+#contactussubmit{
+  margin-top: 5%;
+  margin-left: 50%;
+   width: 120px;
+  border-color: #ff1b6d ;
+  border-radius: 10px;
+background-color: #ff1b6d;
+}
+
+
+#contactussubmit:hover{
+  border-color: palevioletred !important;
+  background-color: palevioletred !important;
+}
+
+/* the code that i write for you nada */
+#container-inputs{
+ /* display: flex;
+ justify-content: space-between;
+ flex-direction: row; */
+}
+
+.contact-container{
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+}
+.input-group{
+  width: 50%;
+}
+.textarea-contact{
+  justify-content: flex-start;
+  margin-left: 70%;
+}
