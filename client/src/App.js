@@ -1,7 +1,6 @@
 import react from "react";
 import "./App.css";
-import Offers from "./Components/Offers/Offers";
-//import Signupbrand from "./Components/SignupBrand/Signupbrand";
+//import Offers from "./Components/Offers/Offers";
 //import OfferCard from "./Components/Offers/OfferCard";
 //import InfluencerNavbar from "./Components/loadingInfluencerPage/InfluencerNavbar";
 //import SideBar from "./Components/InfluncerDiscovery/SideBar";
@@ -13,7 +12,7 @@ function App() {
 	return (
 		<div className="app">
 	
-	<Offers/>
+	<Signupbrand/>
 
 	
 		</div>
