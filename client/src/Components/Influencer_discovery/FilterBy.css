@@ -1,24 +1,24 @@
 
-.base-container {
+#BC {
     display: flex;
     flex-direction: column;
     align-items: flex-start; 
     width: 100%;
-    margin: 30px;
+    margin: 70px;
    margin-top: auto;
     font-family: Arial, sans-serif;
   }
   
   
   
-  .base-heading {
+  #BH {
     margin-bottom: 40px;
     text-align: left;
     font-size: 20px;
   }
   
   
-  .base-label {
+  #BL{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,7 +27,7 @@
   }
   
   
-  .base-checkbox {
+  #BAC{
     margin-right: 10px;
     width: 15px;
     height: 15px;
@@ -35,7 +35,7 @@
   }
   
   
-  .platform-count {
+  #PLC {
     background-color: #FFC0CB;
     border-radius: 1px;
     padding: 3px 6px;
@@ -43,7 +43,7 @@
   }
   
   
-  .platform-container {
+  #PC {
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 20px;
@@ -54,7 +54,7 @@
   }
   
   
-  .filter-container {
+  #FLC {
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 20px;
@@ -63,7 +63,7 @@
   }
   
   
-  .filter-item {
+  #FI {
     background: #fff;
     border: 2px solid rgb(255, 7, 135);
     border-radius: 10px;
@@ -72,21 +72,21 @@
   }
   
   
-  .filter-item label {
+  #FI label {
     font-size: 16px;
     color: black;
     margin-bottom: 12px;
   }
   
   
-  .filter-item input[type="range"] {
+  #FI input[type="range"] {
     width: 100%;
     height: 25px;
     accent-color: rgb(248, 9, 49);
   }
   
   
-  .filter-item input[type="checkbox"] {
+  #FI input[type="checkbox"] {
     width: 40px;
     height: 20px;
     -webkit-appearance: none;
@@ -99,7 +99,7 @@
   }
   
   
-  .filter-item input[type="checkbox"]::before {
+  #FI input[type="checkbox"]::before {
     content: '';
     position: relative;
     display: block;
@@ -110,29 +110,29 @@
     transition: transform 0.2s ease-in-out;
   }
   
-  .filter-item input[type="checkbox"]:checked {
+  #FI input[type="checkbox"]:checked {
     background-color: rgb(248, 9, 49);
   }
   
   
-  .filter-item input[type="checkbox"]:checked::before {
+  #FI input[type="checkbox"]:checked::before {
     transform: translateX(20px);
   }
   
   
   @media (max-width: 768px) {
-    .base-container {
+    #BC {
       max-width: 480px;
     }
   
-    .platform-container,
-    .filter-container {
+    #PC,
+    #FLC {
       max-width: 100%;
       margin: 20px;
       padding: 15px;
     }
   
-    .filter-item,
+    #FI,
     .platform-label {
       margin-bottom: 15px;
     }

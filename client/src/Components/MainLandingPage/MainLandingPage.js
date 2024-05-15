@@ -3,6 +3,7 @@ import "./MainLandingPage.css";
 import MainPageCarousel from "./MainPageCarousel";
 import BlogPostsCard from "./BlogPostsCard";
 import { BsFillCaretRightSquareFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
 const MainLandingPage = () => {
 	const blogPostsData = [
 		{
@@ -146,10 +147,12 @@ const MainLandingPage = () => {
 								resulting in collaborations that resonate with audiences
 								worldwide.
 							</p>
-							<button id="aboutUsButton" className="learnMoreButton">
-								{" "}
-								Learn More{" "}
-							</button>
+							<Link to={"/AboutUs"}>
+								<button id="aboutUsButton" className="learnMoreButton">
+									{" "}
+									Learn More{" "}
+								</button>
+							</Link>
 						</div>
 					</div>
 				</div>
@@ -256,6 +259,7 @@ const MainLandingPage = () => {
 					<div className="textSection">
 						<div className="checkoutTitle">find brands</div>
 						<h5>They could be looking for someone like you.</h5>
+
 						<button className="checkoutButton">Check out</button>
 					</div>
 				</div>
@@ -268,7 +272,9 @@ const MainLandingPage = () => {
 					<div className="textSection2">
 						<div className="checkoutTitle">find influencers</div>
 						<h5>Find the best content creator for your brand.</h5>
-						<button className="checkoutButton">Check out</button>
+						<Link to={"/InfluencerSignUp"}>
+							<button className="checkoutButton">Check out</button>
+						</Link>
 					</div>
 				</div>
 			</div>
@@ -286,7 +292,9 @@ const MainLandingPage = () => {
 					</p>
 				</div>
 				<div className="buttonWrapper">
-					<button className="writeToUsButton"> Write to us </button>
+					<Link to={"contactUs"}>
+						<button className="writeToUsButton"> Write to us </button>
+					</Link>
 				</div>
 			</div>
 		</div>

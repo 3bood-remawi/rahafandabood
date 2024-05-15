@@ -41,21 +41,20 @@ const BrandP = () => {
       <div>
         <img src={image} id="thumbnail1" alt="" />
         <img src={image2} id="thumbnail2" alt="" />
-        <div className="container">
-          <div className="textbox">
-            <h3>NAME</h3>
-          </div>
+        <div className="textbox">
+          <h3>NAME</h3>
         </div>
       </div>
-      <div className="boxx">
+      <div className="boxxx">
         <div className="card" id="description">
           <div className="card-body">
             <label htmlFor="floatingInput">Description: </label>
             <p>
-              oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+              ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
             </p>
           </div>
         </div>
+
         <div className="button-container">
           <div className="button-row">
             <button type="button" className="btn btn-danger" id="btn1">
@@ -77,103 +76,105 @@ const BrandP = () => {
           </div>
         </div>
       </div>
-      <hr />
-      <h3 className="posts-title">Posts</h3>
-      <br></br>
-      <div id="carouselExampleIndicators" className="carousel slide">
-        <div className="carousel-indicators">
+      <div className="container">
+        <hr />
+        <h3 className="posts-title">Posts</h3>
+        <br></br>
+        <div id="carouselExampleIndicators" className="carousel slide">
+          <div className="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              className="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+              <img
+                src={exampleCarouselImage}
+                className="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div className="carousel-item">
+              <img
+                src={exampleCarouselImage2}
+                className="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div className="carousel-item">
+              <img
+                src={exampleCarouselImage3}
+                className="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
           <button
+            className="carousel-control-prev"
             type="button"
             data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            className="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
+            data-bs-slide="prev"
+          >
+            <span
+              className="carousel-control-prev-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="visually-hidden">Previous</span>
+          </button>
           <button
+            className="carousel-control-next"
             type="button"
             data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
+            data-bs-slide="next"
+          >
+            <span
+              className="carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="visually-hidden">Next</span>
+          </button>
         </div>
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            <img
-              src={exampleCarouselImage}
-              className="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div className="carousel-item">
-            <img
-              src={exampleCarouselImage2}
-              className="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div className="carousel-item">
-            <img
-              src={exampleCarouselImage3}
-              className="d-block w-100"
-              alt="..."
-            />
-          </div>
+        <br></br>
+        <hr />
+        <h3 className="links-title">Social Media Links</h3>
+        <br></br>
+        <div className="social-buttons" id="social-b">
+          <button className="btn btn-custom btn-instagram" id="b-instagram">
+            <i className="bi bi-instagram"></i>
+          </button>
+          <button className="btn btn-custom btn-facebook" id="b-facebook">
+            <i className="bi bi-facebook"></i>
+          </button>
+          <button className="btn btn-custom btn-tiktok" id="b-tiktok">
+            <i className="bi bi-tiktok"></i>
+          </button>
+          <button className="btn btn-custom btn-snapchat" id="b-snapchat">
+            <i className="bi bi-snapchat"></i>
+          </button>
+          <button className="btn btn-custom btn-youtube" id="b-youtube">
+            <i className="bi bi-youtube"></i>
+          </button>
+          <button className="btn btn-custom btn-x" id="b-x">
+            <i className="bi bi-twitter-x"></i>
+          </button>
         </div>
-        <button
-          className="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev"
-        >
-          <span
-            className="carousel-control-prev-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button
-          className="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next"
-        >
-          <span
-            className="carousel-control-next-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Next</span>
-        </button>
-      </div>
-      <br></br>
-      <hr />
-      <h3 className="links-title">Links</h3>
-      <br></br>
-      <div className="social-buttons">
-        <button className="btn btn-custom btn-instagram">
-          <i className="bi bi-instagram"></i>
-        </button>
-        <button className="btn btn-custom btn-facebook">
-          <i className="bi bi-facebook"></i>
-        </button>
-        <button className="btn btn-custom btn-tiktok">
-          <i className="bi bi-tiktok"></i>
-        </button>
-        <button className="btn btn-custom btn-snapchat">
-          <i className="bi bi-snapchat"></i>
-        </button>
-        <button className="btn btn-custom btn-youtube">
-          <i className="bi bi-youtube"></i>
-        </button>
-        <button className="btn btn-custom btn-x">
-          <i className="bi bi-twitter-x"></i>
-        </button>
       </div>
 
       <div

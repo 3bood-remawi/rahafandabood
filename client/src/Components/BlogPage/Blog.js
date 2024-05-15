@@ -11,21 +11,21 @@ import picture10 from '../Image/‏‏picture10.png';
 export default function Blog() {
   return (
     <div className="blog">
-        <div className="container1">
+        <div className="container1" id="container1-blog">
     <img  className=" coverphoto"src={picture5} alt='Cover'></img>
-    <div className="Heading">
+    <div className="Heading" id="Heading-blog">
     <h1 >Blog</h1>
     </div>
 </div>
       <div className="card-latest">
-        <div className="container-4">
+        <div className="container1">
           <div className="long-established">
             long established
           </div>
           <div className="paragraph1">
             It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that....
           </div>
-          <div className="container-2">
+          <div className="container1-a">
             <span className="may-20-th-2020">
               May 20th 2020
             </span>
@@ -38,7 +38,7 @@ export default function Blog() {
         <img  className=" picture6"src={picture6} alt='Picture6'></img>
         </div>
       </div>
-      <div className="container">
+      <div className="container2">
         <div className="card-panel-left">
           <div className="picture7">
           <img  className=" picture7"src={picture7} alt='Picture7'></img>
@@ -50,7 +50,7 @@ export default function Blog() {
           <div className="paragraph2">
             It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that....
           </div>
-          <div className="container-6">
+          <div className="container2-a">
             <span className="may-20-th-20201">
               May 20th 2020
             </span>
@@ -70,7 +70,7 @@ export default function Blog() {
           <div className="paragraph3">
             It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that....
           </div>
-          <div className="container-3">
+          <div className="container2-b">
             <span className="may-20-th-20202">
               May 20th 2020
             </span>
@@ -90,7 +90,7 @@ export default function Blog() {
           <div className="paragraph4">
             It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that....
           </div>
-          <div className="container-7">
+          <div className="container2-c">
             <span className="may-20-th-20203">
               May 20th 2020
             </span>
@@ -101,14 +101,14 @@ export default function Blog() {
         </div>
       </div>
       <div className="highlight-section">
-        <div className="container-1">
+        <div className="container3">
           <div className="what-is-lorem-ipsum">
             What is Lorem Ipsum?
           </div>
           <div className="paragraph5">
             It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution...
           </div>
-          <div className="container-5">
+          <div className="container3-a">
             <span className="may-20">
               May 20
             </span>
@@ -122,7 +122,7 @@ export default function Blog() {
 
         </div>
       </div>
-      <div className="group-1">
+      <div className="group">
         <div className="see-more">
           See more
         </div>
@@ -131,7 +131,6 @@ export default function Blog() {
   <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
 </svg>     
    </div>
-        
       </div>
     </div>
   )
