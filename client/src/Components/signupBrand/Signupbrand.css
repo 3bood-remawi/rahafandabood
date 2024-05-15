@@ -1,21 +1,21 @@
 body{
     padding-left: 75px;
     padding-right: 75px;
-
+  background-color: #000000;
 }
-.custom-input,
-.custom-select {
-  background-color: #faf2f8;  
-  border: 1px solid #ff45ca; 
-  border-radius: 5px; 
-  padding: 10px; 
-  font-family: 'Arial', sans-serif;
-  font-size: 16px; 
-  color: #333; 
-  margin-bottom: 15px;
+#Custom-input1,
+#Custom-select2{
+  background-color: #faf2f8 ;   
+  border: 1px solid #ff1b6d ; 
+  border-radius: 5px ; 
+  padding: 10px ; 
+  font-family: 'Arial', sans-serif ;
+  font-size: 16px ; 
+  color: #333 ; 
+  margin-bottom: 15px ;
 }
 
-.custom-select {
+#Custom-select2 {
   appearance: none; 
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -26,34 +26,38 @@ body{
 }
 
 
-.btn {
+#Btnn1,
+ #Btnn2   {
   padding: 10px 30px; 
   font-size: 16px; 
-  border-radius: 5px; 
-  border: 1px solid transparent; 
+  border-radius: 10px; 
+  border: 2px solid transparent; 
   transition: background-color 0.5s, color 0.5s;
 }
 
-.back {
+#Btnn1 {
   background-color:#faf2f8; 
   color: #000000; 
-  margin-right: 1110px; 
-  border-color: #ff00b7; 
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-right: 1450px; 
+  border-color: #ff1b6d; 
 }
 
-.confirm {
-  background-color: #ff00b7; 
+#Btnn2 {
+  background-color: #ff1b6d; 
   color: white;
-  border-color: #ff00b7; 
+  border-color: #ff1b6d; 
 }
 
 
-.btn:hover {
-  background-color: #ff1493; 
+#Btnn1,
+ #Btnn2:hover {
+  background-color: #ff1b6d; 
   color: white; 
 }
 
-.terms-text {
+#Terms-Text11 {
   font-size: 20px; 
   color: #000000; 
 padding-left:180px ;
@@ -61,51 +65,51 @@ padding-right:180px ;
 
 }
 
-.terms-link,
-.terms-highlight {
+#Terms-Link11,
+#Terms-Highlight11 {
   font-weight: bold;
-  color: #ff00b7; 
+  color: #ff1b6d; 
 
 }
 
-.terms-link {
-  color: #ff00b7; 
+#Terms-Link11 {
+  color: #ff1b6d; 
 }
 
 
 
 @media (max-width: 768px) {
-    .row {
+    #Row44 {
       flex-direction: column;
     }
   
-    .col {
+    #Col44 {
       width: 100%;
       padding: 0; 
     }
   
-    .back {
+    #Btnn1 {
       margin-right: 0;
       margin-bottom: 10px; 
     }
   
-    .forms, .terms-text {
+    #Formss55, #Terms-Text11 {
       margin-right: 20px;
       margin-left: 20px;
     }
   
-    .terms-text, .form-buttons {
+    #Terms-Text11 , #Form-Buttons12 {
       text-align: center;
     }
   
     
-    .custom-input, .custom-select {
+    #Custom-input1 , #Custom-select2 {
       width: 100%;
     }
   }
   
   
-  .row {
+  #Row44{
     display: flex;
     flex-wrap: wrap;
     margin-top: 5px;
@@ -113,7 +117,7 @@ padding-right:180px ;
     margin-right: -5px;
   }
   
-  .col {
+  #Col44{
     flex: 1; 
     padding: 5px; 
   }
