@@ -1,5 +1,5 @@
 
-.profile-card {
+#PROFC {
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 25px;
@@ -8,16 +8,16 @@
   max-width: 450px; 
   margin: 0 auto; 
   text-align: center;
-
+ 
 }
-.profile-header {
+#PROH {
   display: flex;
   align-items: center;
   margin-bottom: 15px;
 
 }
 
-.profile-image {
+#piiii {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -28,7 +28,7 @@
   margin: 0;
 }
 
-.profile-role {
+#PROFLRR{
   margin: 0;
   font-size: 0.8em;
   color: #888;
@@ -64,18 +64,18 @@
   border: 1px solid #ffffff;
 }
 
-.influencer-name {
+#INNAMF {
   font-weight: bold;
   color: black;
 }
 
-.influencer-type {
+#INFFTA {
   font-weight: bold;
   color: black;
   font-size: xx-small;
 }
 
-.influencer-location {
+#INFL {
   font-size: small;
 }
 
@@ -98,22 +98,23 @@
 }
 
 
-.container {
-  position: absolute;
-  max-width: 800px;
+.cont {
+  position:absolute;
+  max-width: 950px;
   margin: auto;
-  left: 120px;
-  height: 70vh;
+  left: 400px;
+  height: 95vh;
   overflow-y:auto ;
+
 }
 @media (max-width: 768px) {
-  .profile-card {
+  #PROFC {
     width: 100%; 
     margin-top: 20px; 
     max-width: none;
   }
 
-  .container {
+  .cont {
     position: static; 
     max-width: none; 
     margin: 0; 
@@ -121,7 +122,7 @@
     
   }
 
-  .profile-card, .Filters {
+  #PROFC, .Filters {
     position: static; 
     width: 100%; 
     max-width: none;
@@ -135,12 +136,12 @@
 }
 
 
-.profile-card:hover {
+#PROFC:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.profile-card {
+#PROFC {
   margin-left: 200px;
   z-index: 1;
 }
@@ -151,7 +152,7 @@
 }
 
 @media (max-width: 768px) {
-  .profile-card,
+  #PROFC,
   .Filters {
     position: static;
     width: 100%;
@@ -161,7 +162,7 @@
   }
 }
 
-.profile-card:hover {
+#PROFC:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }

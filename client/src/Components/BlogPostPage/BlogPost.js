@@ -1,9 +1,10 @@
 import './BlogPost.css'
-import picture from '../Imag/picture.png'
+import picture from '../Image/picture.png'
+
 export default function BlogPost() {
   return (
     <div className="blog-posts">
-      <div className="pictur">
+      <div className="picture">
       <img className='picture' src={ picture} ></img>
 
       </div>

@@ -40,23 +40,23 @@ const FilterBy = () => {
   };
 
   return (
-    <div className="base-container">
-      <div className="platform-container">
-        <h3 className="base-heading">Platform</h3>
+    <div className="base-container" id="BC">
+      <div className="platform-container" id="PC">
+        <h3 className="base-heading" id="BH">Platform</h3>
         {platforms.map((platform, index) => (
-          <label key={platform.name} className="base-label">
+          <label key={platform.name} className="base-label" id="BL">
             <input
               type="checkbox"
-              className="base-checkbox"
+              className="base-checkbox" id="BAC"
             />
             {platform.name}
-            <span className="platform-count">{platform.count}</span>
+            <span className="platform-count" id="PLC">{platform.count}</span>
           </label>
         ))}
       </div>
 
-      <div className="filter-container">
-        <div className="filter-item">
+      <div className="filter-container" id="FLC">
+        <div className="filter-item" id="FI">
           <label htmlFor="min-followers">Min-followers</label>
           <input
             id="min-followers"
@@ -69,7 +69,7 @@ const FilterBy = () => {
           <span>{minFollowers}</span>
         </div>
 
-        <div className="filter-item">
+        <div className="filter-item" id='FI'>
           <label htmlFor="min-price">Min-price</label>
           <input
             id="min-price"
@@ -82,7 +82,7 @@ const FilterBy = () => {
           <span>{minPrice}</span>
         </div>
 
-        <div className="filter-item">
+        <div className="filter-item" id="FI">
           <label htmlFor="verified">Verified</label>
           <input
             id="verified"

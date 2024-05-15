@@ -1,15 +1,12 @@
 
 import './SearchBar.css'; 
 import React from 'react';
-
-
-
 class SearchBar extends React.Component {
   render() {
     return (
-      <div className="search-section">
-        <input type="text" className="search-input" placeholder="Search by name..." />
-        <select className="dropdown-niche">
+      <div className="search-section" id="SSCT">
+        <input type="text" className="search-input" id="SIIIN" placeholder="Search by name..." />
+        <select className="dropdown-niche" id='DDNIC'>
           <option value="beauty">Beauty</option>
           <option value="fashion">Fashion</option>
           <option value="sports">Sports</option>
@@ -21,10 +18,10 @@ class SearchBar extends React.Component {
           <option value="education">Education</option>
           <option value="lifestyle">Lifestyle</option>
         </select>
-        <input type="text" className="search-input" placeholder="Search by location..." />
-        <div className="sort-section">
+        <input type="text" className="search-input"  id="SIIIN" placeholder="Search by location..." />
+        <div className="sort-section" id="SORRR">
           <span>Sort by:</span>
-          <select className="dropdown-sort">
+          <select className="dropdown-sort" id="DDSOO">
             <option value="newest">Newest</option>
             <option value="compatible">Most Compatible</option>
             <option value="nearest">Nearest Location</option>

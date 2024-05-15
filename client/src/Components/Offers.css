@@ -1,4 +1,4 @@
-#Containerrr222 {
+.container {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -8,26 +8,26 @@
   margin-left: 280px;
   padding: 0;
 }
-#offerrr456 {
+.Offers1 {
   background-color: whitesmoke;
 }
 .Title-O {
   margin-right: 100px;
   margin-left: -130px;
 }
-#List-group-item333  {
+.list-group-item {
   margin-right: 250px;
   background-color: white;
 
   margin-bottom: 5px;
   border: none;
 }
-#Top-section44 {
+.top-section {
 
   display: flex;
   align-items: center;
 }
-#List-group55 {
+.list-group {
   margin-right: 250px;
   width: 15%;
   border: 2px solid #FF1B6D;
@@ -42,12 +42,12 @@
   border-radius: 15px;
 
 }
-#Card-image111 {
+.card-image {
   width: 25%;
   margin: 20px;
   border-radius: 15px 15px 0 0;
 }
-#OOffercard-containerrr {
+.offercard-container {
   flex: 0 0 75%;
   display: flex;
   flex-wrap: wrap;
@@ -61,7 +61,7 @@
   min-height: 70vh;
 }
 
-#CCaarrdd1122 {
+.card {
   flex: 0 0 48%;
   margin-bottom: 10px;
   background-color: white;
@@ -71,7 +71,7 @@
   height: 250px;
 }
 
-#Card-Body10 {
+.card-body {
   padding: 20px;
   display: flex;
   border-radius: 25px;
@@ -79,7 +79,7 @@
   flex-direction: column;
 }
 
-#bbbtn33 {
+.btn {
   height: 40px;
   margin-inline: 35px;
   padding: 10px 20px;
@@ -93,31 +93,31 @@
 
 }
 
-#bbbtn33 {
+.btn-primary {
 
   background-color: #2883ED;
 }
 
-#bbbtn33:hover {
+.btn-primary:hover {
 
   background-color: whitesmoke;
   color: #2883ED;
 }
 
 @media (max-width: 768px) {
-  #Containerrr222 {
+  .container {
     flex-direction: column;
   }
 
-  #List-group55 {
+  .list-group {
     width: 100%;
   }
 
-  #OOffercard-containerrr {
+  .offercard-container {
     width: 100%;
   }
 
-  #CCaarrdd1122 {
+  .card {
     flex: 0 0 100%;
   }
 }
