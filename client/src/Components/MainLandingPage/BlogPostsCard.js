@@ -1,11 +1,14 @@
 import React from "react";
 import "./BlogPostsCard.css";
+import { Link } from "react-router-dom";
 const BlogPostsCard = (props) => {
 	return (
 		<div className="siteWrapper">
 			<div className="titleDiv">
 				<h2 className="blogTitle"> Blog Posts </h2>
-				<button className="viewMoreButton"> View More </button>
+				<Link to={"/Blog"}>
+					<button className="viewMoreButton"> View More </button>
+				</Link>
 			</div>
 			{props.blogPostsData.map((item) => {
 				return (

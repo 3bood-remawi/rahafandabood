@@ -1,15 +1,22 @@
 import React from "react";
 import "./Style.css";
-import ImageGallery from "../loadingInfluencerPage/ImageGallery";
+import ImageGalleryBrands from "./ImageGalleryBrands";
 import { Link } from "react-router-dom";
 
-const InfluencerNavbar = (props) => {
+const BrandsNavbar = (props) => {
 	return (
 		<>
-			<nav className="navbar navbar-expand-lg navbar-light bg-light">
+			<nav
+				id="navBarContain"
+				className="navbar navbar-expand-lg navbar-light bg-light"
+			>
 				<div className="container-fluid" id="header-container">
 					<div className="header">
-						<a className="navbar-brand" href="/" id="InfluenBlend">
+						<a
+							className="navbar-brand"
+							href="/brandsHomePage"
+							id="InfluenBlend"
+						>
 							InfluenBlend
 						</a>
 						<button
@@ -28,30 +35,30 @@ const InfluencerNavbar = (props) => {
 							id="navbarSupportedContent"
 						>
 							<div className="header-menu">
-								<Link to={"/"}>
+								<Link to={"/brandsHomePage"}>
 									<a className="menu-link is-active" href="/#">
 										Home
 									</a>
 								</Link>
-								<Link to={"/AboutUs"}>
+								<Link to={"/AboutUs/Brands"}>
 									<a className="menu-link notify" href="/#">
 										About
 									</a>
 								</Link>
-								<Link to={"/ContactUs"}>
+								<Link to={"/ContactUs/Brands"}>
 									<a className="menu-link" href="/#">
 										Contact
 									</a>
 								</Link>
-								<Link to={"/Blog"}>
+								<Link to={"/Blog/Brands"}>
 									<a className="menu-link notify" href="/#">
 										Blog
 									</a>
 								</Link>
 
-								<Link to={"/exploreBrands"}>
+								<Link to={"/All"}>
 									<a className="menu-link notify" href="/#">
-										Explore Brands
+										Explore Influencers
 									</a>
 								</Link>
 							</div>
@@ -74,7 +81,7 @@ const InfluencerNavbar = (props) => {
 									></path>
 								</svg>
 							</div>
-							<ImageGallery imageIndex={0} />
+							<ImageGalleryBrands imageIndex={0} />
 						</div>
 					</div>
 				</div>
@@ -83,4 +90,4 @@ const InfluencerNavbar = (props) => {
 	);
 };
 
-export default InfluencerNavbar;
+export default BrandsNavbar;

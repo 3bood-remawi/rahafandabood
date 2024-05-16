@@ -8,9 +8,7 @@ s * {
 .sidebar {
 	display: flex;
 }
-.app {
-	background-color: #ececec;
-}
+
 @media (max-width: 768px) {
 	.sidebar {
 		flex-direction: column;

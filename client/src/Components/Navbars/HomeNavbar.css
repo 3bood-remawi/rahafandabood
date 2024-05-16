@@ -29,22 +29,26 @@
 }
 #nav-ul a {
 	text-decoration: none;
+	margin-right: 30px;
 }
 #nav-ul a:hover {
 	text-decoration: underline;
 	color: #ff1b6d;
 }
 #logout {
+	width: 40px;
+	height: 40px;
 	border-radius: 10px;
-	margin-right: 20px;
+	margin-right: 5px;
 }
 #join-as-brand {
 	border-radius: 50px;
 	margin-right: 20px;
+	margin-left: 5px;
 }
 #join-as-creator {
 	border-radius: 50px;
-	margin-right: 20px;
+	margin-right: 15px;
 }
 @media (max-width: 768) {
 	#InfluenBlend {
