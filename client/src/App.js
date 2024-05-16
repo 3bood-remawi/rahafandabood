@@ -10,7 +10,7 @@ import Footer from "./Components/Footer/Footer";
 import InfluenBlend from "./Components/AboutPage/InfluenBlend";
 import SignUpInfluencer from "./Components/SignUpInfluencer/SignUpInfluencer";
 import SignUp from "./Components/SignUp2/SignUp";
-import InfluencerHome from "./Components/loadingInfluencerPage/InfluencerHome";
+import InfluencerHome from "./Components/loadingBrandPage/InfluencerHome";
 // import ContactUs from "./Components/ContactUs/ContactUs";
 import Blog from "./Components/BlogPage/Blog";
 import Signupbrand from "./Components/signupBrand/Signupbrand";
