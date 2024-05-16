@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const routerBlog =require('./src/Controller/BlogPostsRouter')
 const cors=require('cors')
 
 const { PORT, mongoDBURL } = require('./config'); 
@@ -14,7 +15,7 @@ app.get('/',(req,res)=>{
     return res.status(234).send('Hello')
 })
 
-// app.use('/brands',routerBlog)
+app.use('/brands',routerBlog)
 mongoose.connect(mongoDBURL).then(() => {
     console.log('App connected to database');
     app.listen(PORT, () => {

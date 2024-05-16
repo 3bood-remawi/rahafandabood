@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
-const userSchema = new Schema({
+const influencer = new Schema({
   
     firstName: {
         type: String,
@@ -51,8 +51,16 @@ const userSchema = new Schema({
         type: String,
         required: false
     },
+    postIds:{
+        type:mongoose.Schema.Types.ObjectId, ref: 'brand-posts',
+        required:true
+    },
+    offerIds:{
+        type:mongoose.Schema.Types.ObjectId, ref: 'offers',
+        required:true
+    },
   
 });
 
-const User = mongoose.model('User', userSchema);
+const User = mongoose.model('influencers', influencer);
 module.exports = User;
