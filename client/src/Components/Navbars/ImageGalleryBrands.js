@@ -1,5 +1,5 @@
 import React from "react";
-import jsonData from "../loadingInfluencerPage/images.json";
+import jsonData from "../loadingBrandPage/images.json";
 import { Link } from "react-router-dom";
 const ImageGalleryBrands = ({ imageIndex }) => {
 	const toggleMenu = () => {

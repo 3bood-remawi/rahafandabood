@@ -1,6 +1,6 @@
 import React from "react";
 import "./Style.css";
-import ImageGallery from "../loadingInfluencerPage/ImageGallery";
+import ImageGallery from "../loadingBrandPage/ImageGallery";
 import { Link } from "react-router-dom";
 
 const InfluencerNavbar = (props) => {
