@@ -259,8 +259,9 @@ const MainLandingPage = () => {
 					<div className="textSection">
 						<div className="checkoutTitle">find brands</div>
 						<h5>They could be looking for someone like you.</h5>
-
-						<button className="checkoutButton">Check out</button>
+						<Link to={"/BrandSignUp"}>
+							<button className="checkoutButton">Check out</button>
+						</Link>
 					</div>
 				</div>
 				<div className="brandContainer">

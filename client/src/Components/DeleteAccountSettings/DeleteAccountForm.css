@@ -1,8 +1,7 @@
 .deleteAccountContainer {
-	width: 60%;
-	margin: 40px 0 40px 40px;
+	margin-left: 20px;
 	padding: 20px;
-	border-radius: 8px;
+	border-radius: 15px;
 	background-color: #fff;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 	text-align: left;
@@ -10,6 +9,13 @@
 	box-sizing: border-box;
 	border-color: #ff1b6d;
 	border: 1px solid #ff1b6d;
+}
+.deleteAccountPanel {
+	width: 40%;
+}
+.deleteAccountFlexContainer {
+	display: flex;
+	justify-content: baseline;
 }
 
 .deleteAccountContainer h3 {
@@ -43,10 +49,4 @@
 
 .deleteAccountButton:hover {
 	background-color: #c82333;
-}
-
-.deleteAccountContainer::after {
-	content: "";
-	display: table;
-	clear: both;
 }

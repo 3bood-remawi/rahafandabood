@@ -7,7 +7,7 @@ const HomeNavbar = () => {
 		<nav className="navbar navbar-expand-lg navbar-light bg-light" id="nav">
 			<div className="container-fluid" id="cont">
 				<Link className="navbarBrandLink" to={"/"}>
-					<a className="navbar-brand" href="/#" id="InfluenBlend">
+					<a className="navbar-brand" href="/" id="InfluenBlend">
 						InfluenBlend
 					</a>
 				</Link>
