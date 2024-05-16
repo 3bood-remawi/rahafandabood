@@ -12,7 +12,7 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-.title {
+#TTL {
   margin-bottom: 2.5rem;
   color: var(--primary-color);
   text-align: center;
@@ -21,7 +21,7 @@ body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.steps__container {
+#SSSCC {
   max-width: 800px;
   margin: 3rem auto;
   padding: 2rem;
@@ -66,7 +66,7 @@ body {
   display: none;
 }
 
-.detail__title {
+#DDDTTTT {
   text-align: center;
   text-transform: uppercase;
   margin: 0;
@@ -75,7 +75,7 @@ body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.detail__text {
+#DTDTD {
   margin: 2rem 0;
   color: var(--text-muted);
   line-height: 1.8;
@@ -101,7 +101,7 @@ body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.clpar {
+#CLLLL{
   text-align: center;
   color: var(--text-color);
   font-size: 1.2rem;
@@ -117,11 +117,11 @@ body {
 
 
 @media (max-width: 1024px) {
-  .title {
+  #TTL {
     font-size: 2.5rem;
   }
 
-  .steps__container,
+  #SSSCC,
   .detail {
     padding: 1.5rem;
     max-width: 90%;
@@ -159,41 +159,17 @@ body {
 }
 
 @media (max-width: 480px) {
-  .title {
+  #TTL {
     font-size: 2rem;
   }
 
-  .detail__title {
+  #DDDTTTT {
     font-size: 1.5rem;
   }
 
-  .detail__text {
+  #DTDTD {
     font-size: 1rem;
   }
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
-
-
-
-
-
-
-    
