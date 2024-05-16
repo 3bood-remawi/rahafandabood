@@ -1,12 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from "react";
-// import AccSettingPass from "./Components/AccSettingPass/AccSettingPass";
+import AccSettingPass from "./Components/AccSettingPass/AccSettingPass";
 import AccountSettings from "./Components/AccountSettings/AccountSettings";
 import "./App.css";
 import HomeNavbar from "./Components/Navbars/HomeNavbar";
 import MainLandingPage from "./Components/MainLandingPage/MainLandingPage";
 import Footer from "./Components/Footer/Footer";
-// import DeleteAccountForm from "./Components/DeleteAccountSettings/DeleteAccountForm";
+import DeleteAccountForm from "./Components/DeleteAccountSettings/DeleteAccountForm";
 import InfluenBlend from "./Components/AboutPage/InfluenBlend";
 import SignUpInfluencer from "./Components/SignUpInfluencer/SignUpInfluencer";
 import SignUp from "./Components/SignUp2/SignUp";
@@ -22,7 +22,7 @@ import BrandP from "./Components/BrandProfile/BrandP";
 import Offers from "./Components/Offers/Offers";
 import ChoosePlatform from "./Components/Business_landing_page/ChoosePlatform";
 import Collaborate from "./Components/Business_landing_page/Collaborate";
-// import CollaborationSteps from "./Components/Business_landing_page/CollaborationSteps";
+import CollaborationSteps from "./Components/Business_landing_page/CollaborationSteps";
 import UpgradeCard from "./Components/Business_landing_page/UpgradeCard";
 import Finalone from "./Components/Business_landing_page/Finalone";
 
@@ -122,7 +122,7 @@ function App() {
 								<Banner />
 								<Collaborate />
 								<ChoosePlatform />
-								{/* <CollaborationSteps /> */}
+								<CollaborationSteps />
 								<UpgradeCard />
 								<Finalone />
 								<Footer />
@@ -140,7 +140,7 @@ function App() {
 						}
 					/>
 					<Route path="/Brand/ProfilePage" element={<BrandP />} />
-					 <Route path="/InfluencerHome" element={<InfluencerHome />} /> 
+					<Route path="/InfluencerHome" element={<InfluencerHome />} />
 					<Route
 						path="/AccountSettings"
 						element={
@@ -172,8 +172,8 @@ function App() {
 							</div>
 						}
 					/>
-					{/* <Route path="/AccSettingPass" element={<AccSettingPass />} /> */}
-					{/* <Route path="/DeleteAccount" element={<DeleteAccountForm />} /> */}
+					<Route path="/AccSettingPass" element={<AccSettingPass />} />
+					<Route path="/DeleteAccount" element={<DeleteAccountForm />} />
 				</Routes>
 			</BrowserRouter>
 		</div>
