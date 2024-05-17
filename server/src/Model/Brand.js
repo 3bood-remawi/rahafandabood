@@ -45,10 +45,10 @@ const brand =mongoose.Schema({
         required:true
     },
     offerIds:{
-        type:mongoose.Schema.Types.ObjectId, ref: 'offer',
+        type:mongoose.Schema.Types.ObjectId, ref: 'offers',
         required:true
     },
 })
 
-const User =mongoose.model('brand',brand) 
+const User =mongoose.model('brands',brand) 
 module.exports= User

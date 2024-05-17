@@ -1,8 +1,5 @@
-// import mongoose from "mongoose";
 const mongoose =require('mongoose')
-// const {Schema}=mongoose
-
-const blog =mongoose.Schema({ 
+const blog_posts =mongoose.Schema({ 
     date:{
         type:String,
         required:true
@@ -25,5 +22,5 @@ const blog =mongoose.Schema({
     },
 })
 
-const User =mongoose.model('blog',blog) 
+const User =mongoose.model('blog-posts',blog_posts) 
 module.exports= User

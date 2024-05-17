@@ -17,7 +17,6 @@ const ProfileCard = ({ role, roleType, socialMedia,location }) => {
             <p className="profile-role" id="PROFLRR">
               <span className="influencer-name" id="INNAMF">{role}</span>
               <span className="influencer-type" id="INFFTA">|{roleType}</span>
-              
             </p>
             
           </div>
