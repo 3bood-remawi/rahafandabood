@@ -1,0 +1,69 @@
+#modalllL {
+    background-color: rgba(165, 165, 165, 0.829) ;
+    border: none ; 
+}
+
+#modallll-Dialoooog-Centered {
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+}
+
+#MMModal-CCCOontent {
+    border: none ; 
+}
+
+#MMOOdal-HHEEAAader {
+    background-color: rgb(255, 255, 255) ;
+    border-bottom: none ; 
+}
+
+#modalTTTitle22 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center ;
+    width: 100% ;
+    font-size: 40px ; 
+}
+
+#MMmodalLL-bBBOOody {
+    background-color: #ffffff ;
+    border-bottom: none ;
+}
+
+#MODELLLL-fOOOter {
+    border-top: none ; 
+    margin-bottom: 15px ;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    height: 160px ;
+    padding-top: 0 ;
+}
+
+#inputTTTttTTTT1212 {
+    margin-bottom: 30px ;
+}
+
+#inputTTTttTTTT1212 {
+    border-radius: 15px;
+    border: 1px solid #ff1b6d ; 
+    padding: 10px ; 
+}
+
+
+
+#BBBbbbTTTtttNNNNN1212 {
+    background-color: #ff1b6d ;
+    font-size: 25px ;
+    border-radius: 20px ;
+    height: 50px ;
+    width: 490px ;
+    margin-top: -15px ; 
+}
+#texXXXXtTTTTttt1111{
+    font-size: 25px ;
+}
+#texXXXXtTTTTttt2222 {
+    font-size:25px  ;
+   color:#ff1b6d ;
+}
