@@ -4,6 +4,7 @@ import MainPageCarousel from "./MainPageCarousel";
 import BlogPostsCard from "./BlogPostsCard";
 import { BsFillCaretRightSquareFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import { Img } from "react-image";
 const MainLandingPage = () => {
 	const blogPostsData = [
 		{
@@ -44,19 +45,19 @@ const MainLandingPage = () => {
 		},
 	];
 	const firstBrandPictures = [
-		<img
+		<Img
 			id="firstImage"
 			src="/images/brand2.jpeg"
 			alt="brand2"
 			loading="lazy"
 		/>,
-		<img
+		<Img
 			id="secondImage"
 			src="/images/barnd1.jpeg"
 			alt="brand1"
 			loading="lazy"
 		/>,
-		<img
+		<Img
 			id="thirdImage"
 			src="/images/brand3.jpeg"
 			alt="brand3"
@@ -65,13 +66,13 @@ const MainLandingPage = () => {
 	];
 
 	const secondBrandPictures = [
-		<img
+		<Img
 			id="firstImageBrand"
 			src="/images/brand4.jpeg"
 			alt="brand4"
 			loading="lazy"
 		/>,
-		<img
+		<Img
 			id="secondImageBrand"
 			src="/images/brand5.jpeg"
 			alt="brand5"
@@ -123,11 +124,11 @@ const MainLandingPage = () => {
 							</button>
 						</div>
 						<div class="image">
-							<img
+							<Img
 								alt="mainInmage"
 								id="mainPageImage"
 								src="./images/mainphoto.png"
-							></img>
+							></Img>
 						</div>
 					</div>
 				</div>
@@ -136,7 +137,7 @@ const MainLandingPage = () => {
 				<div class="content">
 					<div class="innerContainer">
 						<div class="image">
-							<img alt="aboutUsImage" src="./images/aboutus.png"></img>
+							<Img alt="aboutUsImage" src="./images/aboutus.png"></Img>
 						</div>
 						<div class="info">
 							<h2> We are InfluenBlend</h2>
@@ -173,11 +174,11 @@ const MainLandingPage = () => {
 				<div class="content">
 					<div class="innerContainer">
 						<div class="image">
-							<img
+							<Img
 								id="ourValuesImage"
 								alt="ourValuesImage"
 								src="./images/ourvalues.png"
-							></img>
+							></Img>
 						</div>
 						<div className="ourValuesContainer">
 							<div>
@@ -190,11 +191,11 @@ const MainLandingPage = () => {
 							</div>
 							<div className="ourValuesInnerContainer">
 								<div>
-									<img
+									<Img
 										className="ourValuesIcons"
 										src="./images/ourvaluesicon1.png"
 										alt="ourvaluesicon"
-									></img>
+									></Img>
 									<h3>Nulla lobortis nunc </h3>
 									<p className="mainParagraph">
 										Vestibulum sit amet tortor libero lobortis semper at et
@@ -203,7 +204,7 @@ const MainLandingPage = () => {
 									</p>
 								</div>
 								<div>
-									<img
+									<Img
 										className="ourValuesIcons"
 										src="./images/ourvaluesicon2.png"
 										alt="ourvaluesicon"
@@ -218,7 +219,7 @@ const MainLandingPage = () => {
 							</div>
 							<div className="ourValuesInnerContainer">
 								<div>
-									<img
+									<Img
 										className="ourValuesIcons"
 										src="./images/ourvaluesicon3.png"
 										alt="ourvaluesicon"
@@ -231,7 +232,7 @@ const MainLandingPage = () => {
 									</p>
 								</div>
 								<div>
-									<img
+									<Img
 										className="ourValuesIcons"
 										src="./images/ourvaluesicon4.png"
 										alt="ourvaluesicon"
