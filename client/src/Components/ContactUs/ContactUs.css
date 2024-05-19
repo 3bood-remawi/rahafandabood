@@ -1,63 +1,10 @@
 
-body {
-  background-color: white;
+.error{
+  color: red;
 }
-
- .container {
-  background-color: white;
- display: flex;
-  justify-content: center;
-}
- #InfluenBlend {
-  font-size: 20px;
-  font-weight: bold;
-  font-style: italic;
-  color:  #ff1b6d;
-}
-
-
-#nav-itemmm{
-  margin-left: 20px;
-}
-#nav-link{
-  color: black;
-  font-weight: bold;
-}
-
-ul#nav-link:hover{
-color:#ff1b6d!important;
-}
-
-#logout{
-  width: 40px;
-  border-radius: 15px;
-  border-color: white;
-  margin-left: 330px;
- margin-inline-end: auto;
-  
-}
-#icone{
- margin-block: auto;
-}
-
-
-#navbtnn{
-  border-radius: 20px;
- 
-}
-#navbtn{
-  border-radius: 20px;
-  border-color: #ff1b6d;
-  background-color:  #ff1b6d;
-}
-#navbtn:hover{
-  background-color: palevioletred !important;
-}
-
 
 #header{
   display: flex;
-  /* width:100%; */
   align-items: center;
   justify-content: center;
   position: relative;
@@ -65,79 +12,88 @@ color:#ff1b6d!important;
 }
 
 #header-image{
- 
   width: 100%;
   height: 300px;
 }
-.card-img-overlay{
+#card-img-overlay1{
   display: flex;
   justify-content: center;
 }
-.contact-us{
+ .contact-us{
   color: white;
 margin-top: 100px;
 
-}
+} 
 
-#boxes{
+.box{
   margin-top: 80px;
- 
+ display:flex;
+ flex-direction: column;
+ margin-inline-start: 35%;
+
 }
 
-@media (max-width:768px) {
+ @media (max-width:450px) {
     .box{
-      flex-direction: column;
+     
+      margin-inline-start: 10%;
+      margin-inline-end: 10%;
+
     }
-    .mb-3{
-      align-self: flex-start;
+    #contactussubmit{
+      margin-inline-start: 50%;
     }
+  
+} 
+#form-labelll{ 
+  color: #ff1b6d; 
 }
-.form-label{
-  margin-left: 90px;
+#form-labellll{
   color: #ff1b6d;
+  margin-top: 10px;
+}
+#form-labelllll{
+  color: #ff1b6d;
+  margin-top: 10px;
+}
+#form-labellllll{
+  color: #ff1b6d;
+  margin-top: 10px;
 }
 
-#form-control1{
-margin-left: 90px;
- display: wrap; 
+
+#F_name{
   max-width: 450px;
   border-color:  #ff1b6d;
   border-radius: 0px;
+  
 } 
-#form-control2{
-  margin-left: 90px;
-   display: wrap; 
+
+#L_name{
     max-width: 450px;
     border-color:  #ff1b6d;
     border-radius: 0px;
+   
   }
-  #form-control3{
-    margin-left: 90px;
-     display: wrap; 
+  #E_mail{
       max-width: 450px;
       border-color:  #ff1b6d;
       border-radius: 0px;
     }
 
 
-    #form-control4{
-      margin-left: 90px;
-       display: wrap; 
+    #message{
         max-width: 450px;
         border-color:  #ff1b6d;
         border-radius: 0px;
       }
 
 
-.mb-3{
-  margin-left: 50%;
-} 
-
-
 
 #contactussubmit{
-  margin-top: 5%;
-  margin-left: 50%;
+  margin-top: 2%;
+   margin-left: 42%;  
+  
    width: 120px;
   border-color: #ff1b6d ;
   border-radius: 10px;
@@ -147,25 +103,6 @@ background-color: #ff1b6d;
 
 #contactussubmit:hover{
   border-color: palevioletred !important;
-  background-color: palevioletred !important;
-}
-
-/* the code that i write for you nada */
-#container-inputs{
- /* display: flex;
- justify-content: space-between;
- flex-direction: row; */
-}
-
-.contact-container{
-  display: flex;
-  flex-direction: column;
-  padding-top: 5rem;
-}
-.input-group{
-  width: 50%;
-}
-.textarea-contact{
-  justify-content: flex-start;
-  margin-left: 70%;
+  background-color:white!important;
+  color: #ff1b6d;
 }
