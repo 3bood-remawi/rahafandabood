@@ -1,4 +1,5 @@
-.popup {
+.formPopup {
+	z-index: 9999;
 	padding: 30px;
 	position: fixed;
 	top: 0;

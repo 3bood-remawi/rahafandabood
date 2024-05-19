@@ -1,8 +1,16 @@
 import React from "react";
 import "./Offers.css";
+import { useState } from "react";
+import OffersForm from "../MainLandingPage/OffersForm";
 import restaurantImage from "../img/Screenshot 2024-04-26 191047.png";
 
 function OfferCard() {
+	const [isVisible, setIsVisible] = useState(false);
+
+	const toggleVisibility = () => {
+		setIsVisible(!isVisible);
+	};
+
 	return (
 		<div className="card" id="CCaarrdd1122">
 			<div className="card-body" id="Card-Body10">
@@ -19,12 +27,17 @@ function OfferCard() {
 					</div>
 				</div>
 				<div className="button-group">
-					<a href="#" className="btn btn-primary" id="bbbtn33">
+					<button className="btn btn-primary" id="bbbtn33">
 						view profile
-					</a>
-					<a href="#" className="btn btn-primary" id="bbbtn33">
+					</button>
+					<button
+						onClick={toggleVisibility}
+						className="btn btn-primary"
+						id="bbbtn33"
+					>
 						view offer
-					</a>
+					</button>
+					{isVisible && <OffersForm toggleVisibility={toggleVisibility} />}
 				</div>
 			</div>
 		</div>
