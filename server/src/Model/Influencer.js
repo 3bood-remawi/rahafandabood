@@ -1,19 +1,38 @@
 const mongoose = require('mongoose');
 const { Schema } = mongoose;
-
+const validator=require('validator')
 const influencer = new Schema({
   
     firstName: {
         type: String,
-        required: true
+        required: true,
+        trim:true,
+        validate(value){
+            if(validator.isEmpty(value)){
+                throw new Error(' first name is required')
+            }
+        }
     },
     lastName: {
         type: String,
-        required: true
+        required: true,
+        trim:true,
+        validate(value){
+            if(validator.isEmpty(value)){
+                throw new Error('last  name is required')
+            }
+        }
     },
     email: {
         type: String,
-        required: true
+        required: true,
+        trim: true,
+        lowercase: true,
+        validate(value) {
+            if (!validator.isEmail(value)) {
+                throw new Error('Email is invalid')
+            }
+        }
     },
     phoneNumber: {
         type: String,
@@ -33,7 +52,15 @@ const influencer = new Schema({
     },
     password: {
         type: String,
-        required: true
+        required: true,
+        trim:true,
+        minlength:8,
+        validate(value){
+            if(!validator.isStrongPassword(value)){
+              throw new Error('Password is not Strong')
+            }
+
+        }
     },
     instagram: {
         type: String,

@@ -2,14 +2,38 @@ import React, { useState } from "react";
 import "./AccSettingPass.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { Link, useNavigate } from "react-router-dom";
+import axios from 'axios';
 
 const AccSettingPass = () => {
 	const [currentPassword, setCurrentPassword] = useState("");
 	const [newPassword, setNewPassword] = useState("");
 	const [confirmPassword, setConfirmPassword] = useState("");
 
-	const handlePasswordChange = (e) => {
+	const handlePasswordChange = async (e) => {
 		e.preventDefault();
+
+		const errors = validatePassword(newPassword);
+		// if (errors.length > 0) {
+		// 	setPasswordError(errors.join("\n"));
+		// 	return;
+		// }
+		
+		if (newPassword !== confirmPassword) {
+			alert('Passwords do not match');
+			return;
+		}
+
+		try {
+			const response = await axios.put('/api/', {
+				email: 'user@example.com',
+				newPassword,
+			});
+
+			alert(response.data.message);
+		} catch (error) {
+			console.error(error);
+			alert('Failed to change password');
+		}
 	};
 
 	const confirmPasswordColor = () => {
@@ -28,6 +52,28 @@ const AccSettingPass = () => {
 	const handleDeleteButton = () => {
 		navigate("/DeleteAccount");
 		console.log("delete button clicked");
+	};
+	const validatePassword = (password) => {
+		const errors = [];
+		if (password.length < 8) {
+			errors.push("Password must be at least 8 characters long.");
+		}
+		if (!/[A-Z]/.test(password)) {
+			errors.push("Password must include at least one uppercase letter.");
+		}
+		if (!/[a-z]/.test(password)) {
+			errors.push("Password must include at least one lowercase letter.");
+		}
+		if (!/[0-9]/.test(password)) {
+			errors.push("Password must include at least one number.");
+		}
+		if (!/[!@#$%^&*(),.?":{}|<>]/.test(password)) {
+			errors.push("Password must include at least one symbol.");
+		}
+		if (password.toLowerCase().includes('password')) {
+			errors.push('Password cannot contain "password".');
+		}
+		return errors;
 	};
 
 	return (

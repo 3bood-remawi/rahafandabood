@@ -1,8 +1,15 @@
 const mongoose =require('mongoose')
+const validator=require('validator')
 const brand =mongoose.Schema({
     brandName:{
         type:String,
-        required:true
+        required:true,
+        trim:true,
+        validate(value){
+            if(validator.isEmpty(value))
+            {
+                throw new Error(' brand name is required')
+            }
     },
     email:{
         type:String,
@@ -10,11 +17,24 @@ const brand =mongoose.Schema({
     },
     password:{
         type:String,
-        required:true
+        required:true,
+        trim:true,
+        minlength:8,
+        validate(value){
+            if(!validator.isStrongPassword(value)){
+              throw new Error('Password is not Strong')
+            }
+
+        }
     },
     phoneNumber:{
         type:String,
-        required:true
+        required:true,
+        validate(value){
+            if(!validator.isMobilePhone(value)){
+                throw new Error('Phonr number is invalid')
+            }
+        }
     },
     country:{
         type:String,
@@ -48,7 +68,7 @@ const brand =mongoose.Schema({
         type:mongoose.Schema.Types.ObjectId, ref: 'offers',
         required:true
     },
-})
+}})
 
 const User =mongoose.model('brands',brand) 
 module.exports= User

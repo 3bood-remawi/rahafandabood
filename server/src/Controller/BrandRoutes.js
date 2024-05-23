@@ -1,9 +1,9 @@
 // import express from'express'
-const express=require('express')
-const brand=require('../Model/BlogPosts')
+const express= require('express');
+// const brand=require('../Model/BlogPosts')
 // import { Book } from '../models/bookModel.js'
 const router=express.Router()
-
+const brand=require('../Model/Influencer')
 
 //Route for Save a new Book
 router.post('/', async(req,res)=>{
@@ -33,10 +33,39 @@ router.post('/', async(req,res)=>{
     }
 })
 
+
+router.patch('/Influencer/:id', async (req, res) => {
+     const {id}=req.params;
+    const updates = Object.keys(req.body)
+
+    const allowedUpdates = [
+     'firstName'
+    ]
+     const isValidOperation = updates.every((update) => allowedUpdates.includes(update))
+     if (!isValidOperation) {
+         return res.status(400).send({ error: 'Invalid updates!' })
+     }
+    try {
+        const users = await brand.findByIdAndUpdate(id,req.body)
+    
+        if (!users) {
+            return res.status(404).send()
+        }
+
+        res.status(200).send(users)
+        
+    } catch (e) {
+        res.status(500).send(e.message)
+         
+    }
+})
+
+module.exports=router
+
 // //Route for Get All Bkoos from database
 // router.get('/',async(req,res)=>{
 //     try{
-//      const books=await Book.find({})
+//      const books=await brand.find({})
 //      return res.status(500).json({
 //         count:books.length,
 //         data:books
@@ -98,6 +127,4 @@ router.post('/', async(req,res)=>{
 //         res.status(500).send({message:error.message})
 //     }
 //     return res.status(200).json({message:'Book deleted successfully'})
-// })
-
-module.exports=router
+// }) 
