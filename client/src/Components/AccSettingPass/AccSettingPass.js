@@ -19,7 +19,7 @@ const AccSettingPass = () => {
 		// }
 		
 		if (newPassword !== confirmPassword) {
-			alert('Passwords do not match');
+			alert('Passwords do nt match');
 			return;
 		}
 
