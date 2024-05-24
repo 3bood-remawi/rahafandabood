@@ -2,80 +2,132 @@ import React, { useState, useEffect } from "react";
 import "./AccountSettings.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { useNavigate } from "react-router-dom";
+import Modal from 'react-bootstrap/Modal';
+import Button from 'react-bootstrap/Button';
 
 const AccountSettings = () => {
 	const [socialMediaLinks, setSocialMediaLinks] = useState({
-		instagram: "",
-		facebook: "",
-		tiktok: "",
-		twitter: "",
-		youtube: "",
-		snapchat: "",
-	});
+        instagram: "",
+        facebook: "",
+        tiktok: "",
+        twitter: "",
+        youtube: "",
+        snapchat: "",
+    });
+    const [showModal, setShowModal] = useState(false);
+    const [currentLink, setCurrentLink] = useState({ name: "", url: "" });
 
-	const fetchSocialMediaLinks = () => {
-		setTimeout(() => {
-			setSocialMediaLinks({
-				instagram: "https://www.instagram.com/myaccount",
-				facebook: "",
-				tiktok: "https://www.tiktok.com/@myaccount",
-				twitter: "",
-				youtube: "https://www.youtube.com/add/myaccount",
-				snapchat: "",
-			});
-		}, 1000);
-	};
+    const fetchSocialMediaLinks = () => {
+        setTimeout(() => {
+            setSocialMediaLinks({
+                instagram: "https://www.instagram.com/myaccount",
+                facebook: "",
+                tiktok: "https://www.tiktok.com/@myaccount",
+                twitter: "",
+                youtube: "https://www.youtube.com/channel/myaccount",
+                snapchat: "",
+            });
+        }, 1000);
+    };
 
-	useEffect(() => {
-		fetchSocialMediaLinks();
-	}, []);
+    useEffect(() => {
+        fetchSocialMediaLinks();
+    }, []);
 
-	const handleDeleteLink = (socialMedia) => {
-		setSocialMediaLinks({
-			...socialMediaLinks,
-			[socialMedia]: "",
-		});
-	};
+    const handleDeleteLink = (socialMedia) => {
+        setSocialMediaLinks({
+            ...socialMediaLinks,
+            [socialMedia]: "",
+        });
+    };
 
-	const renderSocialMediaButtons = () => {
-		const socialMediaList = Object.keys(socialMediaLinks);
+    const openModal = (socialMedia) => {
+        setCurrentLink({ name: socialMedia, url: socialMediaLinks[socialMedia] || "" });
+        setShowModal(true);
+    };
 
-		return socialMediaList.map((socialMedia, index) => (
-			<div key={index} className="col-4 position-relative">
-				<div className="btn-container">
-					<button
-						type="button"
-						className={`btn btn-primary btn-custom btn-${socialMedia}`}
-					>
-						<i className={`bi bi-${socialMedia}`}></i>
-					</button>
-					{socialMediaLinks[socialMedia] && (
-						<button
-							className="btn btn-trash position-absolute"
-							onClick={() => handleDeleteLink(socialMedia)}
-						>
-							<i className="bi bi-trash"></i>
-						</button>
-					)}
-				</div>
-			</div>
-		));
-	};
+    const handleLinkChange = (e) => {
+        setCurrentLink({ ...currentLink, url: e.target.value });
+    };
 
-	const navigate = useNavigate();
+    const handleAuthorize = () => {
+        if (currentLink.url.startsWith("https://")) {
+            console.log("Link authorized:", currentLink.url);
+            alert('Link is valid and authorized.');
+        } else {
+            alert('Link is invalid, please enter a valid URL.');
+        }
+    };
 
-	const handleCancel = () => {
-		navigate("/AccSettingPass");
-		console.log("Cancel button clicked");
-	};
+    const saveLink = () => {
+        setSocialMediaLinks({ ...socialMediaLinks, [currentLink.name]: currentLink.url });
+        setShowModal(false);
+    };
 
-	const handleDeleteButton = () => {
-		navigate("/DeleteAccount");
-		console.log("delete button clicked");
-	};
+    const renderSocialMediaButtons = () => {
+        return Object.keys(socialMediaLinks).map((socialMedia, index) => (
+            <div key={index} className="col-4 position-relative">
+                <div className="btn-container">
+                    <button
+                        type="button"
+                        className={`btn btn-primary btn-custom btn-${socialMedia}`}
+                        onClick={() => openModal(socialMedia)}
+                    >
+                        <i className={`bi bi-${socialMedia}`}></i>
+                    </button>
+                    {socialMediaLinks[socialMedia] && (
+                        <button
+                            className="btn btn-trash position-absolute"
+                            onClick={() => handleDeleteLink(socialMedia)}
+                        >
+                            <i className="bi bi-trash"></i>
+                        </button>
+                    )}
+                </div>
+            </div>
+        ));
+    };
+
+    const navigate = useNavigate();
+
+    const handleCancel = () => {
+        navigate("/AccSettingPass");
+        console.log("Cancel button clicked");
+    };
+
+    const handleDeleteButton = () => {
+        navigate("/DeleteAccount");
+        console.log("delete button clicked");
+    };
 
 	return (
 		<div className="account-settings">
+			 <Modal show={showModal} onHide={() => setShowModal(false)}>
+                <Modal.Header closeButton>
+                    <Modal.Title>Edit Social Media Link</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    <input
+                        type="text"
+                        className="form-control"
+                        value={currentLink.url}
+                        onChange={handleLinkChange}
+                        placeholder="Enter social media link..."
+                    />
+                </Modal.Body>
+                <Modal.Footer>
+                    <Button variant="secondary" onClick={() => setShowModal(false)}>
+                        Close
+                    </Button>
+                    <Button variant="primary" onClick={saveLink}>
+                        Save Changes
+                    </Button>
+                    <Button variant="success" onClick={handleAuthorize}>
+                        Authorize
+                    </Button>
+                </Modal.Footer>
+            </Modal>
+            <div className="container"></div>
 			<div className="container">
 				<h2>Account Settings</h2>
 				<h6>Change your profile and account settings</h6>
@@ -190,6 +242,7 @@ const AccountSettings = () => {
 									<h2> Social Media</h2>
 									<div className="row justify-content-center mt-1">
 										{renderSocialMediaButtons()}
+										
 									</div>
 								</div>
 								<div className="col-12">

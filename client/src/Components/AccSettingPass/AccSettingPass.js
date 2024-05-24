@@ -19,21 +19,22 @@ const AccSettingPass = () => {
 		// }
 		
 		if (newPassword !== confirmPassword) {
-			alert('Passwords do nt match');
+			alert('Passwords do not match');
 			return;
 		}
 
 		try {
-			const response = await axios.put('/api/', {
+			const response = await axios.put('/api/change-password', {
 				email: 'user@example.com',
-				newPassword,
+				newPassword: newPassword,
 			});
-
+		
 			alert(response.data.message);
 		} catch (error) {
 			console.error(error);
 			alert('Failed to change password');
 		}
+		
 	};
 
 	const confirmPasswordColor = () => {
@@ -128,18 +129,6 @@ const AccSettingPass = () => {
 							<div className="card-body-1">
 								<form onSubmit={handlePasswordChange}>
 									<h3 className="card-title">Change password</h3>
-									<div className="form-group">
-										<label htmlFor="currentPassword">Current password</label>
-										<input
-											type="password"
-											className="form-control"
-											id="currentPassword"
-											value={currentPassword}
-											onChange={(e) => setCurrentPassword(e.target.value)}
-											required
-											style={{ borderColor: "#ca3667" }}
-										/>
-									</div>
 									<div className="form-group">
 										<label htmlFor="newPassword">New password</label>
 										<input

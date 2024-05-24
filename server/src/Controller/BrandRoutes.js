@@ -34,7 +34,7 @@ router.post('/', async(req,res)=>{
 })
 
 
-router.patch('/Influencer/:id', async (req, res) => {
+router.patch('/Influencer', async (req, res) => {
      const {id}=req.params;
     const updates = Object.keys(req.body)
 
